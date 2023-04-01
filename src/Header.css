@@ -1,0 +1,12 @@
+.header{
+    padding: 15px 20px;
+    justify-content: space-between;
+    display : flex;
+
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+}
+.header__left > img{
+    height : 40px;
+}
