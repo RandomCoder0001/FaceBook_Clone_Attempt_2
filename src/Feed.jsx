@@ -14,6 +14,13 @@ function Feed (){
             username="Akshay"
             message= "hello world"
             />
+            <Post 
+            image ="https://assets.codepen.io/1480814/av+1.png"
+            profilePic="https://assets.codepen.io/1480814/av+1.png"
+            timestamp="15"
+            username="Akshay"
+            message= "hello world"
+            />
         </div>
     );
 }
