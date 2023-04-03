@@ -4,6 +4,7 @@ import { Avatar } from "@mui/material";
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+import db from "./firebase"
 
 function MessageSender(){
     const [input ,setInput] = useState("");
@@ -11,7 +12,13 @@ function MessageSender(){
     const handleSubmit = (e) =>{
         e.preventDefault();
 
-        // data base here
+        db.collection("posts").add({
+            message:input,
+            timestamp:"abc",
+            profilePic:"https://assets.codepen.io/1480814/av+1.png",
+            username: "User",
+            image:imageUrl
+        })
 
         setInput("");
         setImageUrl("");
